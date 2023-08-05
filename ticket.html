@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Ticket</title>
+  </head>
+  <style>
+    body{
+        top: 0;
+        left: 0;
+    }
+    .container {
+      background-color: rgb(223, 219, 214);
+      display: flex;
+      min-width: 1268px;
+    }
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      width: 1150px;
+      padding: 10px;
+    }
+    .right {
+      margin-top: 20px;
+    }
+    .navbar img {
+      width: 50px;
+    }
+    .right img {
+      width: 30px;
+      margin: 0px 20px;
+      padding: 5px;
+      border: 2px solid black;
+    }
+    .form::before{
+      content: "";
+        background: url(train.webp) no-repeat center center/cover ;
+        position: absolute;
+        min-width: 1268px;
+        max-width: 300px;
+        height: 700px;
+        z-index: -1;
+        margin-top: 50px;
+    }
+    
+    .text{
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      padding-left: 730px;
+      margin-top: 46px;
+    
+    }
+    .text label{
+      color: rgb(243, 138, 1);
+      font-size: 4rem;
+      opacity: 0.7;
+
+    }
+    .text span{
+      color: rgb(228, 171, 98);
+      font-size: 30px;
+      padding: 3px;
+      opacity: 0.7;
+    }
+    .back {
+      background: white;
+      width: 600px;
+      padding: 10px;
+      margin-left: 42px;
+    }
+    .foot {
+      background: white;
+      width: 600px;
+      padding: 10px;
+      margin: 10px 40px;
+      border-radius: 10px;
+    }
+    .top{
+        display: flex;
+        width: 630px;
+        margin-left: 37px;
+        margin-top: 100px;
+    }
+    .form-top{
+        background-color: rgb(247, 141, 3);
+        width: 317px;
+        padding: 10px;
+        text-align: center;
+        margin: 0 5px;
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .input{
+      width: 250px;
+      height: 15px;
+      margin: 10px 5px;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 10px;
+      border-style: double;
+    }
+    .input2{
+      width: 200px;
+      height: 15px;
+      margin: 10px 30px;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 10px;
+      border-style: double;
+    }
+    .checkbox{
+      width: 500px;
+      margin: 10px;
+      font-size: 19px;
+
+    }
+    .checkbox1{
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+    }
+
+    .button{
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn1{
+      width: 150px;
+      padding: 10px;
+      margin: 30px 0;
+      background-color: cadetblue;
+      border: none;
+      border-radius: 12px;
+    }
+    .btn2{
+      width: 300px;
+      padding: 10px;
+      margin: 30px 0;
+      background-color: rgb(225, 65, 92);
+      border: none;
+      border-radius: 10px;
+    }
+    .help img{
+      width: 150px;
+      position: fixed;
+    }
+    .line{
+      background-color: aliceblue;
+      height: 5rem;
+      margin: 50px 0;
+    }
+    .help-everyone{
+      text-align: center;
+      margin: 0 8rem;
+      font-size: 20px;
+    }
+
+    .help-line{
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+      margin: 0 5rem;
+      list-style: none;
+    }
+    .help-line img{
+      width: 2rem;
+      border-style: dotted;
+      border-radius: 100%;
+      padding: 30px;
+    }
+    .help-line li{
+      width: 15 0px;
+      padding: 14px;
+      margin: 20px;
+      color: rgb(252, 143, 1);
+    }
+    .help-line label{
+      font-size: 15px;
+    }
+    .holiday-place{
+      background-color: rgba(250, 248, 246, 0.384);
+    }
+    .holiday{
+      margin: 40px 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .place{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 71px;
+      
+    }
+    .place-h{
+     border: 2px solid black;
+     margin: 30px;
+     width: 335px; 
+     box-shadow: 4px 3px 4px white;
+     background-color: white;
+    }
+
+    .place-h img{
+      width: 335px;
+    }
+    .place-information{
+      padding: 0px 20px;
+      font-size: 15px;
+    }
+    h3{
+      font-size: 23px;
+    }
+    .read{
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .link{
+      background: radial-gradient(#667c9e, #c0b736e1);
+      display: flex;
+      padding: 0 8rem;
+      color: white;
+      font-size: 20px;
+      align-items: center;
+    }
+    .app{
+      padding: 0 30px;
+    }
+    .link img{
+      width: 50px;
+      padding: 10px;
+    }
+    .footer{
+      background-color: rgb(63, 5, 117);
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .footer-h{
+      margin: 15px;
+      color: white;
+      font-size: 20px;
+    }
+    .footer-list{
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img
+          src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+          alt=""
+        />
+
+        <img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="" />
+      </div>
+      <div class="right">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3114/3114889.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="form">
+     <div class="text">
+        <label>NDIAN RAILWAYS</h1></label>
+        <span>Safety  | </span>
+        <span>Security  | </span>
+        <span>Punctuality</span>
+         <div class="help">
+          <img src="https://cdn.jsdelivr.net/gh/corover/assets@temp2/askdisha-bucket/launcher.gif">
+       </div>
+     
+       </div>
+       
+    </div>
+      <form action="#">
+        <div class="top">
+                <div class="form-top">PNR STATUS</div>
+          <div class="form-top">CHARTS/VACANCY</div>
+          
+            </div>
+
+        <div class="back">
+            <div class="title">
+            <img src="https://www.irctc.co.in/nget/assets/images/logo_top_eng.jpg">
+            <h2>BOOK TICKET</h2>
+            <img src="https://www.irctc.co.in/nget/assets/images/G20_Logo.png">
+          </div>
+          <input class="input" type="text" placeholder="form" />
+          <input class="input2" type="date" />
+          <input class="input" type="text" placeholder="To" />
+          <input class="input2" type="text" placeholder="All classes" />
+          <input class="input" type="text" placeholder="GENERAL" />
+          <div class="checkbox">
+            <input type="checkbox" class="checkbox1" />
+            Person With Disability Concession
+            <input type="checkbox" class="checkbox1" />
+            Flexible With Date
+            <input type="checkbox" class="checkbox1" />
+            Train With Available Berth
+            <input type="checkbox" class="checkbox1"/>
+            Railway Pass Concession
+          </div>
+          <div class="button" id="button">
+            <button class="btn1">search</button>
+            <button class="btn2">Try booking in ask DISHA 2.0</button>
+          </div>
+        </div>
+      
+      <div class="foot">
+        <p>
+          customers are requested to contact only on IRCTC's authorised contact
+          no./Email id(),for assistance regarding ticket booking refund or
+          forgot user-id/password
+        </p>
+      </div>
+       
+     </form>
+
+     <div class="line"></div>
+     <hr>
+     
+     <div class="help-everyone">
+      <h2 class="contact-h">
+        Have you not found the right one?
+        <br class="contact-h" >
+        Find a service suitable for you here.
+      </h2>
+      <ul class="help-line">
+        <li>  
+          <img src="https://cdn-icons-png.flaticon.com/128/3060/3060178.png">
+          <label>HOTELS</label>
+        </li>
+        <li>
+          
+          <img src="https://cdn-icons-png.flaticon.com/128/1085/1085493.png" alt="">
+          <label>FLIGHTS</label>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/128/821/821405.png">
+          <label>TOURIST TRAIN</label>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/128/3124/3124381.png">
+          <label>TOURIST BUS</label>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/128/1448/1448494.png">
+          <label>HILL RAILWAYS</label>
+        </li>
+         <li>
+          <img src="https://cdn-icons-png.flaticon.com/128/2159/2159694.png">
+          <label>CHARTER TRAIN</label>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/128/667/667312.png">
+          <label>GALLERY</label>
+        </li>
+        <li>
+          <img src="https://cdn-icons-png.flaticon.com/128/5086/5086878.png">
+          <label>HOLIDAY PACKAGES</label>
+        </li>
+       
+      </ul>
+      <div>
+        <img src="https://contents.irctc.co.in/en/GPT_NWEB_HOME_CENTER.jpeg" alt="">
+      </div>
+     </div>
+     <hr>
+     <div class="holiday-place">
+     <div class="holiday">HOLIDAYS</div>
+    <div class="place">
+      <div class="place-h">
+        <img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" alt="">
+        <div class="place-information">
+          <h3>Maharajas' Express</h3>
+          <p>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+        <div class="read">
+          <strong>Read more</strong> 
+        </div>
+        </div>
+      </div>
+
+      <div class="place-h">
+        <img src="https://www.irctc.co.in/nget/assets/images/Thailand.jpg" alt="">
+        <div class="place-information">
+          <h3>International packages</h3>
+          <p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+          <div class="read">
+            <strong>Read more</strong> 
+          </div>
+        </div>
+      </div>
+
+      <div class="place-h">
+        <img src="https://www.irctc.co.in/nget/assets/images/Kashmir.jpg" alt="">
+        <div class="place-information">
+          <h3>Domestic Air packages</h3>
+          <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!</p>
+          <div class="read">
+            <strong>Read more</strong> 
+          </div>
+        </div>
+      </div>
+
+      <div class="place-h">
+        <img src="https://www.irctc.co.in/nget/assets/images/Bharat_Gaurav.jpg" alt="">
+        <div class="place-information">
+          <h3>Bharat Gaurav Tourist Train</h3>
+          <p>IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</p>
+          <div class="read">
+            <strong>Read more</strong> 
+          </div>
+        </div>
+      </div>
+
+      <div class="place-h">
+        <img src="https://www.irctc.co.in/nget/assets/images/Manali.jpg" alt="">
+        <div class="place-information">
+          <h3>Rail Tour Packages</h3>
+          <p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+          <div class="read">
+            <strong>Read more</strong> 
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="link">
+      <p>Get Connected with us on social networks</p>
+      <div class="app">
+        
+        <img  class="img1" src="https://cdn-icons-png.flaticon.com/128/3670/3670124.png">
+        <img class="img2" src ="https://cdn-icons-png.flaticon.com/128/3670/3670125.png">
+        <img class="img3"  src="https://cdn-icons-png.flaticon.com/128/145/145807.png">
+        <img class="img4"  src="https://cdn-icons-png.flaticon.com/128/187/187210.png">
+        <img class="img5"  src="https://cdn-icons-png.flaticon.com/128/4401/4401433.png">
+        <img src="https://cdn-icons-png.flaticon.com/128/145/145808.png">
+        <img class="img6" src="https://cdn-icons-png.flaticon.com/128/3670/3670127.png">
+      </div>
+     </div>
+     <div class="footer">
+      <div class="footer-h">
+      <div class="footer-list">IRCTC Trains</div>
+      <div class="footer-list">General Information</div>
+      <div class="footer-list">Important Information</div>
+      <div class="footer-list">Agents</div>  
+      </div>
+
+      <div class="footer-h">
+        <div class="footer-list">How To</div>
+        <div class="footer-list">IRCTC Official App</div>
+        <div class="footer-list">Advertise with us</div>
+        <div class="footer-list">Refund Rules</div> 
+        <div class="footer-list">Person With Disability Facilities</div> 
+        </div>
+        <div class="footer-h">
+          <div class="footer-list">IRCTC eWallet</div>
+          <div class="footer-list">IRCTC Loyalty Program</div>
+          <div class="footer-list">IRCTC-iPAY Payment Gateway</div>
+          <div class="footer-list">IRCTC Zone</div>  
+          </div>
+
+          <div class="footer-h">
+            <div class="footer-list">For Newly Migrated Agents</div>
+            <div class="footer-list">Mobile Zone</div>
+            <div class="footer-list">Policies</div>
+            <div class="footer-list">Ask Disha ChatBot</div> 
+            <div class="footer-list">About us</div> 
+            </div>
+     </div>
+     <div>
+      <img src="https://www.irctc.co.in/nget/assets/images/security.png" alt="">
+     </div>
+     </div> 
+  </body>
+  <script>
+
+  </script>
+</html>
