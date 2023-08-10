@@ -11,7 +11,7 @@
         left: 0;
     }
     .container {
-      background-color: rgb(223, 219, 214);
+      background-color: #F8F9FA;
       display: flex;
       min-width: 1268px;
     }
@@ -31,135 +31,236 @@
       width: 30px;
       margin: 0px 20px;
       padding: 5px;
-      border: 2px solid black;
+      border: 2px solid #EAEAEA;
     }
     .form::before{
       content: "";
-        background: url(train.webp) no-repeat center center/cover ;
+        background: url(https://english.cdn.zeenews.com/sites/default/files/2022/09/10/1088492-vande.jpg) no-repeat center center/cover ;
         position: absolute;
         min-width: 1268px;
         max-width: 300px;
-        height: 700px;
+        height: 680px;
         z-index: -1;
-        margin-top: 50px;
+        margin-top: 22px;
     }
-    
     .text{
       position: absolute;
       left: 0;
       right: 0;
       margin: auto;
       text-align: center;
-      padding-left: 730px;
-      margin-top: 46px;
+      padding-left: 756px;
+      margin-top: 34px;
     
     }
     .text label{
-      color: rgb(243, 138, 1);
-      font-size: 4rem;
-      opacity: 0.7;
+      color:  #213D77;
+      font-size: 3rem;
+      padding: 30px;
+      font-weight: 800;
 
     }
     .text span{
-      color: rgb(228, 171, 98);
-      font-size: 30px;
+      color:  #213D77;
+      font-size: 23px;
       padding: 3px;
-      opacity: 0.7;
     }
     .back {
       background: white;
-      width: 600px;
+      width: 542px;
       padding: 10px;
-      margin-left: 42px;
+      margin-left: 97px;
     }
-    .foot {
+    .form-foot {
       background: white;
-      width: 600px;
-      padding: 10px;
-      margin: 10px 40px;
-      border-radius: 10px;
+      width: 552px;
+      padding: 5px;
+      margin-top: 8px;
+      margin-left: 97px;
     }
     .top{
         display: flex;
-        width: 630px;
-        margin-left: 37px;
-        margin-top: 100px;
+        width: 563px;
+        margin-left: 96px;
+        margin-top: 58px;
+        justify-content: space-between;
     }
     .form-top{
-        background-color: rgb(247, 141, 3);
-        width: 317px;
-        padding: 10px;
-        text-align: center;
-        margin: 0 5px;
+        background-color: #213D77;
+        width: 271px;
+        height: 38px; 
+        display: flex;  
+        cursor: pointer;
+    }
+    .form-top img{
+      margin-top: 4px;
+      margin-left: 20px;
+      
+    }
+     h4{
+      width: 100px;
+      height: 20px;
+      margin-top: 12px;
+      margin-left: 34px;
+      color: white;
     }
     .title{
         display: flex;
         justify-content: space-between;
-        margin: 20px 0;
+        margin: 7px 0;
+        color: #01266e;
+    }
+    .form-input-left{
+      display: inline-block;
+     padding: 0 7px;
+    }
+    .form-input{
+      text-align: center;
+      width: 260px;
+    }
+    .form-input-from{
+      border: 1px solid black;
+      margin: 5px 0;
+      height: 40px;
+      padding-left: 5px;
+      border-radius: 5px; 
+      width: 254px;
+    }
+    .form-input-from:hover{
+      border: 2px solid #213D77;
     }
     .input{
-      width: 250px;
-      height: 15px;
-      margin: 10px 5px;
-      padding: 10px;
-      font-size: 20px;
-      border-radius: 10px;
-      border-style: double;
+      width: 224px;
+      padding: 6px 0;
+      font-size: 16px;
+      padding-left: 12px;
+      border-block-end-style: initial;
+      border: none;
+      height: 28px;
     }
-    .input2{
-      width: 200px;
-      height: 15px;
-      margin: 10px 30px;
-      padding: 10px;
-      font-size: 20px;
-      border-radius: 10px;
-      border-style: double;
+   
+    .form-input img{
+      width: 10px;
+    }
+    .form-input-A{
+      background-color: antiquewhite;
+      border-radius: 100%;
+      text-align: center;
+      width: 23px;
+      cursor: pointer;
+      margin-left: 120px;
+    }
+    .form-input-A img{
+      width: 13px;
+      padding: 5px;
+      height: 16px;
+    }
+     .form-input-right{
+      display: inline-block;
+      margin: 0 30px;
+    }
+    .date input:hover{
+      border: 1px solid #213D77;
+    }
+    .date{
+      border: 1px solid black;
+      margin-bottom: 35px;
+      min-height: 40px;
+      border-radius: 5px;
+      width: 194px;
+    }
+    .date input{
+      width: 182px;
+      padding: 5px;
+      height: 30px;
+      border: none;
+    }
+    .select{
+      width: 192px;
+      border: 1px solid black;
+      border-radius: 5px;
+      height: 40px;
+    }
+    .select:hover{
+      border: 2px solid #213D77;
+    }
+    .select-class{
+      width: 190px;
+      height: 40px;
+      border: none;
+      background: white;
+      font-size: 19px;
+      cursor: pointer;
+    }
+    .form-input-tag{
+      margin: 20px 7px;
+    }
+    .select-G{
+      width: 238px;
+      border: none;
+      height: 40px;
+      background: white;
+      font-size: 16px;
+      cursor: pointer;
     }
     .checkbox{
       width: 500px;
       margin: 10px;
       font-size: 19px;
-
+      
+    }
+    .checkbox span{
+      font-size: 17px;
+      color: #213D77;
+      padding: 10px;
     }
     .checkbox1{
       width: 20px;
       height: 20px;
       padding: 10px;
+      cursor: pointer;
     }
 
     .button{
       display: flex;
       justify-content: space-between;
+      margin: 17px 13px;
     }
     .btn1{
-      width: 150px;
+      width: 114px;
       padding: 10px;
-      margin: 30px 0;
-      background-color: cadetblue;
+      margin: 30px 20;
+      background-color: #F2772D;
       border: none;
-      border-radius: 12px;
+      border-radius: 6px;
+      cursor: pointer;
     }
     .btn2{
-      width: 300px;
+      width: 224px;
       padding: 10px;
-      margin: 30px 0;
-      background-color: rgb(225, 65, 92);
+      margin: 30px 20;
+      background-color: #58BD33;
       border: none;
-      border-radius: 10px;
+      border-radius: 6px;
+      cursor: pointer;
     }
     .help img{
       width: 150px;
       position: fixed;
     }
     .line{
-      background-color: aliceblue;
-      height: 5rem;
-      margin: 50px 0;
+      background-color: #F7F7F7;
+      width: 1268px;
+      margin-top: 34px;
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 3px solid #b9b4b4;
     }
     .help-everyone{
       text-align: center;
       margin: 0 8rem;
       font-size: 20px;
+      margin-top: 78px;
     }
 
     .help-line{
@@ -171,38 +272,47 @@
     }
     .help-line img{
       width: 2rem;
-      border-style: dotted;
+      border: 1px solid black;
       border-radius: 100%;
       padding: 30px;
     }
     .help-line li{
       width: 15 0px;
       padding: 14px;
-      margin: 20px;
-      color: rgb(252, 143, 1);
+      margin: 3px;
+      color: black;
+      cursor: pointer;
+    }
+    .help-line img:hover{
+      background-color: #2e446e8a;  
     }
     .help-line label{
-      font-size: 15px;
+      font-size: 16px;
+      display: block;
+      font-weight: 900;
+
     }
     .holiday-place{
-      background-color: rgba(250, 248, 246, 0.384);
+      background-color: #F7F7F7;
+      border-top: 3px solid #b9b4b4;
     }
     .holiday{
-      margin: 40px 0;
+      padding-top: 40px;
       font-size: 2rem;
       text-align: center;
+      font-weight: 700;
     }
     .place{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin: 71px;
-      
+      margin: 0 71px;
+      padding: 40px 0;
     }
     .place-h{
-     border: 2px solid black;
-     margin: 30px;
+     border: 1px solid #b9b4b4;
+     margin: 9px;
      width: 335px; 
-     box-shadow: 4px 3px 4px white;
+     box-shadow: 4px 3px 4px #F7F7F7;
      background-color: white;
     }
 
@@ -221,7 +331,7 @@
       margin: 10px 0;
     }
     .link{
-      background: radial-gradient(#667c9e, #c0b736e1);
+      background: #5B3272;
       display: flex;
       padding: 0 8rem;
       color: white;
@@ -229,15 +339,16 @@
       align-items: center;
     }
     .app{
-      padding: 0 30px;
+      padding: 6px 30px;
     }
     .link img{
-      width: 50px;
-      padding: 10px;
+      width: 42px;
+      padding: 5px;
+      cursor: pointer;
     }
     .footer{
-      background-color: rgb(63, 5, 117);
-      margin-top: 10px;
+      background-color: #2C215D;
+      margin-top: 3px;
       display: flex;
       justify-content: space-evenly;
     }
@@ -248,7 +359,9 @@
     }
     .footer-list{
       padding: 20px;
+      cursor: pointer;
     }
+
   </style>
   <body>
     <div class="container">
@@ -267,46 +380,105 @@
         />
       </div>
     </div>
+
     <div class="form">
-     <div class="text">
-        <label>NDIAN RAILWAYS</h1></label>
+      <div class="text">
+        <label>INDIAN RAILWAYS</h1></label>
         <span>Safety  | </span>
         <span>Security  | </span>
         <span>Punctuality</span>
          <div class="help">
           <img src="https://cdn.jsdelivr.net/gh/corover/assets@temp2/askdisha-bucket/launcher.gif">
        </div>
-     
        </div>
-       
-    </div>
+       </div>
+    
       <form action="#">
-        <div class="top">
-                <div class="form-top">PNR STATUS</div>
-          <div class="form-top">CHARTS/VACANCY</div>
+          <div class="top">
+                <div class="form-top">
+                  <img src="https://www.irctc.co.in/nget/assets/images/icons/pnr.png" alt="">
+                 <h4>PNR STATUS</h4>
+                </div>
+                
+                 <div class="form-top">
+            <img src="https://www.irctc.co.in/nget/assets/images/icons/chart.png" alt="">
+           <h4>CHARTER/VACANCY </h4>
+          </div>
           
             </div>
-
-        <div class="back">
+          <div class="back">
             <div class="title">
             <img src="https://www.irctc.co.in/nget/assets/images/logo_top_eng.jpg">
             <h2>BOOK TICKET</h2>
             <img src="https://www.irctc.co.in/nget/assets/images/G20_Logo.png">
           </div>
-          <input class="input" type="text" placeholder="form" />
-          <input class="input2" type="date" />
-          <input class="input" type="text" placeholder="To" />
-          <input class="input2" type="text" placeholder="All classes" />
-          <input class="input" type="text" placeholder="GENERAL" />
+    
+          <div class="form-input-left">
+          <div class="form-input">
+            <div class="form-input-from">
+              <img src="https://cdn-icons-png.flaticon.com/128/2099/2099189.png" alt="">
+               <input class="input" type="text" placeholder="Form" />
+            </div>
+            <div class="form-input-A">
+              <img src="https://cdn-icons-png.flaticon.com/128/3808/3808397.png">
+            </div>
+            
+            <div class="form-input-from">
+              <img src="https://cdn-icons-png.flaticon.com/128/447/447031.png" alt="">
+              <input class="input" type="text" placeholder="To" />
+            </div>
+          </div>
+        </div>
+        <div class="form-input-right">
+        <div class="form-input date ">
+           <input type="date" autocomplete="off" placeholder=""> 
+          </div>
+          <div class="form-input select">
+            <select name="select" class="select-class" id="select">
+              <option selected>All classes</option>
+              <option value="1">All classes</option>
+              <option value="2">  Vistadome AC (EV)</option>
+              <option value="3"> Exec. Chair Car (EC)</option>
+              <option value="4">AC 2 Tier (2A)</option>
+              <option value="5">AC First Class (1A)</option>
+              <option value="6">Anubhuti Class (EA)</option>
+              <option value="7">First Class (FC) </option>
+              <option value="8">AC 3 Economy (3E)</option>
+              <option value="9">Vistadome Chair Car (VC)</option>
+              <option value="10"> AC Chair car (CC)</option>
+              <option value="11">Sleeper (SL)</option>
+              <option value="12">  AC 3 Tier (3A)</option>
+              <option value="13">Vistadome Non AC (VS)</option>
+              <option value="14"> Second Sitting (2S)</option>
+            </select>
+          
+          </div>
+        </div>
+           <div class="form-input">
+            <div class="form-input-tag">
+            <div class="form-input-from">
+            <img src="https://cdn-icons-png.flaticon.com/128/3494/3494371.png" alt="">
+            <select name="select" class="select-G" id="select-s">
+              <option selected>GENERAL</option>
+              <option value="s-1">GENERAL</option>
+              <option value="s-2">LOWER BERTH/SR.CITIZEN</option>
+              <option value="s-3">PERSON WITH DISABILITY</option>
+              <option value="s-4">TATKAL</option>
+              <option value="s-5">PREMIUM TATKAL</option>
+              <option value="s-6">LADIES</option>
+            </select> 
+          </div>
+            </div>
+          </div>
           <div class="checkbox">
             <input type="checkbox" class="checkbox1" />
-            Person With Disability Concession
+           <span>Person With Disability Concession</span> 
             <input type="checkbox" class="checkbox1" />
-            Flexible With Date
+            <span>Flexible With Date</span>
             <input type="checkbox" class="checkbox1" />
-            Train With Available Berth
+           <span>Train With Available Berth</span> 
             <input type="checkbox" class="checkbox1"/>
-            Railway Pass Concession
+           <span>Railway Pass Concession</span> 
           </div>
           <div class="button" id="button">
             <button class="btn1">search</button>
@@ -314,7 +486,7 @@
           </div>
         </div>
       
-      <div class="foot">
+      <div class="form-foot">
         <p>
           customers are requested to contact only on IRCTC's authorised contact
           no./Email id(),for assistance regarding ticket booking refund or
@@ -324,8 +496,9 @@
        
      </form>
 
-     <div class="line"></div>
-     <hr>
+     <div class="line">
+      <img src="https://tpc.googlesyndication.com/simgad/2000023310277757485">
+     </div>
      
      <div class="help-everyone">
       <h2 class="contact-h">
@@ -373,7 +546,7 @@
         <img src="https://contents.irctc.co.in/en/GPT_NWEB_HOME_CENTER.jpeg" alt="">
       </div>
      </div>
-     <hr>
+
      <div class="holiday-place">
      <div class="holiday">HOLIDAYS</div>
     <div class="place">
@@ -432,6 +605,7 @@
         </div>
       </div>
     </div>
+     </div>
      <div class="link">
       <p>Get Connected with us on social networks</p>
       <div class="app">
@@ -478,9 +652,6 @@
      <div>
       <img src="https://www.irctc.co.in/nget/assets/images/security.png" alt="">
      </div>
-     </div> 
   </body>
-  <script>
-
-  </script>
+  
 </html>
