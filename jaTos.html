@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaipur to sawai Madhopur</title>
+    <link rel="stylesheet" href="css/jaTos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img
+          src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+          alt=""
+        />
+
+        <img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="" />
+      </div>
+      <div class="right">
+      <span id="nav-icon" onclick="clickon()">&#9776;</span>
+          </div>
+          <!-- <div class="about-irctc">
+            <span>MEALS</span>
+          </div>
+          <div class="about-irctc">
+            <span>CONTACT US</span>
+          </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="form-lable">
+      <div class="form-lable-text">
+        <div class="form-input-from">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2099/2099189.png"
+            alt=""
+          />
+          <span>JAIPUR-JP(Jaipur)</span>
+        </div>
+
+        <div class="form-input-A">
+          <span id="arrow-two">&#8644;</span>
+        </div>
+        <div class="form-input-from">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/447/447031.png"
+            alt=""
+          />
+          <span>SAWAI MADHOPUR</span>
+        </div>
+
+        <div class="form-input date">
+          <input type="date" autocomplete="off" placeholder="" />
+        </div>
+        <select name="select" class="select-class" id="select">
+          <option selected>All classes</option>
+          <option value="1">All classes</option>
+          <option value="2">Vistadome AC (EV)</option>
+          <option value="3">Exec. Chair Car (EC)</option>
+          <option value="4">AC 2 Tier (2A)</option>
+          <option value="5">AC First Class (1A)</option>
+          <option value="6">Anubhuti Class (EA)</option>
+          <option value="7">First Class (FC)</option>
+          <option value="8">AC 3 Economy (3E)</option>
+          <option value="9">Vistadome Chair Car (VC)</option>
+          <option value="10">AC Chair car (CC)</option>
+          <option value="11">Sleeper (SL)</option>
+          <option value="12">AC 3 Tier (3A)</option>
+          <option value="13">Vistadome Non AC (VS)</option>
+          <option value="14">Second Sitting (2S)</option>
+        </select>
+
+        <select name="select" class="select-class" id="select">
+          <option selected>GENERAL</option>
+          <option value="s-1">GENERAL</option>
+          <option value="s-2">LOWER BERTH/SR.CITIZEN</option>
+          <option value="s-3">PERSON WITH DISABILITY</option>
+          <option value="s-4">TATKAL</option>
+          <option value="s-5">PREMIUM TATKAL</option>
+          <option value="s-6">LADIES</option>
+        </select>
+        <div>
+          <button class="btn">Modify search</button>
+        </div>
+      </div>
+
+      <div class="checkbox-list">
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox1" />
+          <span>Person With Disability Concession</span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox1" />
+          <span>Flexible With Date</span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox1" />
+          <span>Train With Available Berth</span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox1" />
+          <span>Railway Pass Concession</span>
+        </div>
+      </div>
+    </div>
+    <div class="left-form">
+      <div class="left-from-h">
+        <span class="refine">Refine Result</span>
+        <span class="Reset">Reset Filters</span>
+      </div>
+      <div class="left-form-JOURNEY-CLASS">
+        <span>JOURNEY CLASS</span>
+        <select name="selected" class="selected" id="select-JOURNEY CLASS">
+          <option value="1">Select All</option>
+        </select>
+      </div>
+      <div class="JOURNEY-CLASS-S">
+      <div class="checkbox-befor">
+        <div class="JOURNEY-CLASS-L">
+          <input type="checkbox" />
+          <strong class="strong">AC First Class (1A)</strong>
+          </div>
+          <div class="JOURNEY-CLASS-L">
+          <input type="checkbox" />
+          <strong class="strong">AC 3 Tire (3A)</strong>
+          </div>
+          <div class="JOURNEY-CLASS-L">
+            <input type="checkbox" />
+            <strong class="strong">Sleeper (SL)</strong>
+          </div>
+  </div>
+          
+            <div class="checkbox-befor-2">
+          <div class="JOURNEY-CLASS-L">
+            <input type="checkbox" />
+            <strong class="strong">AC 2 Tier (2A)</strong>
+            </div>
+            <div class="JOURNEY-CLASS-L">
+          <input type="checkbox" />
+          <strong class="strong">AC 3 Economy (3E)</strong>
+          </div>
+          <div class="JOURNEY-CLASS-L">
+          <input type="checkbox" />
+          <strong class="strong">AC Chair car (cc)</strong>
+          </div>
+        </div>
+    </div>
+      <div class="left-form-JOURNEY-CLASS" id="left-form-TRAIN-TYPE">
+        <span>TRAIN TYPE</span>
+        <select name="" id="select-TRAIN-TYPE" class="selected">
+          <option value="1">Select All</option>
+        </select>
+      </div>
+      <div class="TRAIN-TYPE">
+        <input type="checkbox" />
+        <strong>OTHER</strong>
+      </div>
+      <div class="TRAIN-TYPE">
+        <input type="checkbox" />
+        <strong>SPECIAL</strong>
+      </div>
+      <div class="TRAIN-TYPE">
+        <input type="checkbox" />
+        <strong>SPECIAL TATKAL</strong>
+      </div>
+
+      <div class="left-form-JOURNEY-CLASS" id="left-form-DEPARTURE-TIME">
+        <span>DEPARTURE TIME</span>
+        <select name="" id="select-DEPARTURE-TIME" class="selected">
+          <option value="1">Select All</option>
+        </select>
+      </div>
+      <div class="DEPARTURE-TIME">
+        <div class="DEPARTURE-TIME-INTO">
+          <span>00:00 - 06:00 Early Morning</span>
+        </div>
+        <div class="DEPARTURE-TIME-INTO">
+          <span>06:00 - 12:00 Morning</span>
+        </div>
+        <div class="DEPARTURE-TIME-INTO">
+          <span>12:00 - 18:00 Mid Day</span>
+        </div>
+        <div class="DEPARTURE-TIME-INTO">
+          <span>18:00 - 24:00 Night</span>
+        </div>
+      </div>
+
+      <div class="left-form-JOURNEY-CLASS">
+        <span>ARRIVAL TIME</span>
+        <select name="select" id="select-ARRIVAL-TIME" class="selected">
+          <option value="1">Select All</option>
+        </select>
+      </div>
+      <div class="time">
+        <div class="time-style"></div>
+        <div class="time-style"></div>
+      </div>
+      <div class="time-style-h">
+        <span>00:00 Hrs</span>
+        <span>24:00 Hrs</span>
+      </div>
+      <div class="JOURNEY-CLASS">
+        <div class="JOURNEY-CLASS-INTO">
+          <span>00:00 - 06:00 Early Morning</span>
+        </div>
+        <div class="JOURNEY-CLASS-INTO">
+          <span>06:00 - 12:00 Morning</span>
+        </div>
+        <div class="JOURNEY-CLASS-INTO">
+          <span>12:00 - 18:00 Mid Day</span>
+        </div>
+        <div class="JOURNEY-CLASS-INTO">
+          <span>18:00 - 24:00 Night</span>
+        </div>
+      </div>
+      <div class="left-form-JOURNEY-CLASS" id="left-form-FROM-STATIONS">
+        <span>FROM STATIONS</span>
+        <select name="" id="select-FROM-STATIONS" class="selected">
+          <option value="1">Select All</option>
+        </select>
+      </div>
+
+      <div class="time">
+        <div class="time-style"></div>
+        <div class="time-style"></div>
+      </div>
+
+      <div class="time-style-h">
+        <span>00:00 Hrs</span>
+        <span>24:00 Hrs</span>
+      </div>
+      <div class="FROM-To-STATIONS">
+        <input type="checkbox" />
+        <strong>JAIPUR</strong>
+      </div>
+      <div class="left-form-JOURNEY-CLASS" id="left-form-TO-STATIONS">
+        <span>TO STATIONS</span>
+        <select name="" id="select-TO-STATIONS" class="selected">
+          <option value="1">Select All</option>
+        </select>
+      </div>
+      <div class="FROM-To-STATIONS">
+        <input type="checkbox" />
+        <strong>SWAI MADHOPUR</strong>
+      </div>
+    </div>
+    <img src="https://tpc.googlesyndication.com/simgad/2507450958136981673" alt="">
+    
+    <div class="right-form">
+      <div class="right-top">
+        <span class="right-top-span1">13 Results for</span>
+        <strong>JAIPUR</strong>
+        <span class="arrow2">&#10137;</span>
+        <strong>SAWAI MADHOPUR | </strong>
+        <span id="fulldate"></span>
+        <span class="right-top-span2">For Quota | General</span>
+      </div>
+
+      <div class="right-form-button">
+        <div class="right-form-button-left">
+          <button class="btn-f" id="Sort-By">Sort By | Duration</button>
+          <button class="btn-f" id="Available-Trains">Show Available Trains</button>
+        </div>
+        <div class="right-form-button-right" style="display: flex;">
+          <button class="btn-s" id="previous-Day">
+            <span class="arrow1">&#8249;</span>
+            <strong>previous Day</strong>
+            </button>
+          <button class="btn-s" id="Next-Day">
+           <strong> Next Day</strong>
+            <span class="arrow1">&#8250;</span>
+          </button>
+        </div>
+      </div>
+      <div class="TRAIN-EXP">
+        <div class="TRAIN-EXP-h">
+          <strong>JP MMCT SF EXP (12956)</strong>
+          <span>Runs On: M T W T F S S</span>
+          <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+        </div>
+        <div class="TRAIN-EXP-time">
+          <strong>14:00 | </strong>
+          <span> JAIPUR | </span>
+          <span id="date1"></span>
+          <span class="span-time">__01:50__</span>
+          <strong>15:50 | </strong> 
+          <span> SWAI MADHOPUR | </span>
+          <span id="date2"></span>
+        </div>
+        <div class="TRAIN-EXP-class">
+          <div class="classes">
+            <strong>Sleeper (SL)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+          <div class="classes">
+            <strong>AC 3 Tier (3A)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+          <div class="classes">
+            <strong>AC 2 Tier (2A)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+          <div class="classes">
+            <strong>AC First CLASS (1A)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+          </div>
+          <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+            <button class="book" id="Book">Book Now</button>
+            <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+          </div>
+      </div> 
+      <img src="https://tpc.googlesyndication.com/simgad/495882816687209028" style="width: 946px;">
+      
+      <div class="TRAIN-EXP">
+        <div class="TRAIN-EXP-h">
+          <strong>JP MYSORE EXP (12976)</strong>
+          <span>Runs On: M T W T F S S</span>
+          <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+        </div>
+        <div class="TRAIN-EXP-time">
+          <strong>19:35 | </strong>
+          <span> JAIPUR | </span>
+          <span id="date3"></span>
+          <span class="span-time">__01:50__</span>
+          <strong>21:25 | </strong> 
+          <span> SWAI MADHOPUR | </span>
+          <span id="date4"></span>
+        </div>
+        <div class="TRAIN-EXP-class">
+          <div class="classes">
+            <strong>Sleeper (SL)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+        <div class="classes">
+          <strong>AC Chair car (CC)</strong>
+          <div class="class-all">
+          <span>Refresh</span>
+          <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+        </div>
+      </div>
+          <div class="classes">
+            <strong>AC 3 Tier (3A)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+          </div>
+          <div class="classes">
+            <strong>AC 2 Tier (2A)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+          <div class="classes">
+            <strong>AC First CLASS (1A)</strong>
+            <div class="class-all">
+            <span>Refresh</span>
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+          </div>
+        </div>
+          </div>
+          <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+            <button class="book" id="Book">Book Now</button>
+            <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+          </div>
+      </div>
+
+              <div class="TRAIN-EXP">
+            <div class="TRAIN-EXP-h">
+              <strong>TPJ SF HUMSAFAR (20481)</strong>
+              <span>Runs On: M T W T F S S</span>
+              <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+            </div>
+            <div class="TRAIN-EXP-time">
+              <strong>21:30 | </strong>
+              <span> JAIPUR | </span>
+              <span id="date5"></span>
+              <span class="span-time">__01:50__</span>
+              <strong>23:25 | </strong> 
+              <span> SWAI MADHOPUR | </span>
+              <span id="date6"></span>
+            </div>
+            <div class="TRAIN-EXP-class">
+              <div class="classes">
+                <strong>Sleeper (SL)</strong>
+                <div class="class-all">
+                <span>Refresh</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+              </div>
+            </div>
+              <div class="classes">
+                <strong>AC 3 Tier (3A)</strong>
+                <div class="class-all">
+                <span>Refresh</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+              </div>
+              </div>
+            </div>
+              <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+                <button class="book" id="Book">Book Now</button>
+                <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+              </div>
+              </div>
+
+                  <div class="TRAIN-EXP">
+                <div class="TRAIN-EXP-h">
+                  <strong>JP BDTS EXP (12980)</strong>
+                  <span>Runs On: M T W T F S S</span>
+                  <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+                </div>
+                <div class="TRAIN-EXP-time">
+                  <strong>20:25 | </strong>
+                  <span> JAIPUR | </span>
+                  <span id="date"></span>
+                  <span class="span-time">__01:50__</span>
+                  <strong>22:20 | </strong> 
+                  <span> SWAI MADHOPUR | </span>
+                  <span id="date"></span>
+                </div>
+                <div class="TRAIN-EXP-class">
+                  <div class="classes">
+                    <strong>Sleeper (SL)</strong>
+                    <div class="class-all">
+                    <span>Refresh</span>
+                    <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                  </div>
+                </div>
+                  <div class="classes">
+                    <strong>AC 3 Tier (3A)</strong>
+                    <div class="class-all">
+                    <span>Refresh</span>
+                    <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                  </div>
+                </div>
+                  <div class="classes">
+                    <strong>AC 2 Tier (2A)</strong>
+                    <div class="class-all">
+                    <span>Refresh</span>
+                    <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                  </div>
+                </div>
+                  <div class="classes">
+                    <strong>AC First CLASS (1A)</strong>
+                    <div class="class-all">
+                    <span>Refresh</span>
+                    <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                  </div>
+                </div>
+                  </div>
+                  <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+                    <button class="book" id="Book">Book Now</button>
+                    <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+                  </div>
+                  </div>
+
+                   <div class="TRAIN-EXP">
+                    <div class="TRAIN-EXP-h">
+                      <strong>DAYODAI EXP (12182)</strong>
+                      <span>Runs On: M T W T F S S</span>
+                      <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+                    </div>
+                    <div class="TRAIN-EXP-time">
+                      <strong>17:30 | </strong>
+                      <span> JAIPUR | </span>
+                      <span id="date7"></span>
+                      <span class="span-time">__02:05__</span>
+                      <strong>19:30 | </strong> 
+                      <span> SWAI MADHOPUR | </span>
+                      <span id="date8"></span>
+                    </div>
+                    <div class="TRAIN-EXP-class">
+                      <div class="classes">
+                        <strong>Sleeper (SL)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                    <div class="classes">
+                      <strong>AC 3 Economy(3E)</strong>
+                      <div class="class-all">
+                      <span>Refresh</span>
+                      <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                    </div>
+                  </div>
+                      <div class="classes">
+                        <strong>AC 3 Tier (3A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      <div class="classes">
+                        <strong>AC 2 Tier (2A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      <div class="classes">
+                        <strong>AC First CLASS (1A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      </div>
+                      <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+                        <button class="book" id="Book">Book Now</button>
+                        <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+                      </div>
+                   </div>
+                    <img src="https://tpc.googlesyndication.com/simgad/2000023310277757485" style="width: 896px;">
+                   
+                    <div class="TRAIN-EXP">
+                    <div class="TRAIN-EXP-h">
+                      <strong>SGNR JLWC EXP (22998)</strong>
+                      <span>Runs On: M T W T F S S</span>
+                      <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+                    </div>
+                    <div class="TRAIN-EXP-time">
+                      <strong>05:50 | </strong>
+                      <span> JAIPUR | </span>
+                      <span id="date9"></span>
+                      <span class="span-time">__02:10__</span>
+                      <strong>08:00 | </strong> 
+                      <span> SWAI MADHOPUR | </span>
+                      <span id="date10"></span>
+                    </div>
+                    <div class="TRAIN-EXP-class">
+                      <div class="classes">
+                        <strong>Sleeper (SL)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                    <div class="classes">
+                      <strong>AC 3 Economy(3E)</strong>
+                      <div class="class-all">
+                      <span>Refresh</span>
+                      <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                    </div>
+                  </div>
+                      <div class="classes">
+                        <strong>AC 3 Tier (3A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      <div class="classes">
+                        <strong>AC 2 Tier (2A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      <div class="classes">
+                        <strong>AC First CLASS (1A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      </div>
+                      <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+                        <button class="book" id="Book">Book Now</button>
+                        <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+                      </div>
+                   </div>
+
+                   <div class="TRAIN-EXP">
+                    <div class="TRAIN-EXP-h">
+                      <strong>HSR KOTA EXP (19808)</strong>
+                      <span>Runs On: M T W T F S S</span>
+                      <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+                    </div>
+                    <div class="TRAIN-EXP-time">
+                      <strong>00:50 | </strong>
+                      <span> JAIPUR | </span>
+                      <span id="date11"></span>
+                      <span class="span-time">__02:15__</span>
+                      <strong>03:05 | </strong> 
+                      <span> SWAI MADHOPUR | </span>
+                      <span id="date12"></span>
+                    </div>
+                    <div class="TRAIN-EXP-class">
+                      <div class="classes">
+                        <strong>Sleeper (SL)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                    <div class="classes">
+                      <strong>AC 3 Economy(3E)</strong>
+                      <div class="class-all">
+                      <span>Refresh</span>
+                      <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                    </div>
+                  </div>
+                      <div class="classes">
+                        <strong>AC 3 Tier (3A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      <div class="classes">
+                        <strong>AC 2 Tier (2A)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                      </div>
+                      <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+                        <button class="book" id="Book">Book Now</button>
+                        <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+                      </div>
+                   </div>   
+                   
+                   <div class="TRAIN-EXP">
+                    <div class="TRAIN-EXP-h">
+                      <strong>RANTHAMBORE EXP (12466)</strong>
+                      <span>Runs On: M T W T F S S</span>
+                      <span class="span-style" style="color: rgb(38, 38, 184);">Train Schedule</span>
+                    </div>
+                    <div class="TRAIN-EXP-time">
+                      <strong>09:55 | </strong>
+                      <span> JAIPUR | </span>
+                      <span id="date13"></span>
+                      <span class="span-time">__02:30__</span>
+                      <strong>12:25 | </strong> 
+                      <span> SWAI MADHOPUR | </span>
+                      <span id="date14"></span>
+                    </div>
+                    <div class="TRAIN-EXP-class">
+                      <div class="classes">
+                        <strong>Sleeper (SL)</strong>
+                        <div class="class-all">
+                        <span>Refresh</span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                      </div>
+                    </div>
+                    <div class="classes">
+                      <strong>AC 3 Economy(3E)</strong>
+                      <div class="class-all">
+                      <span>Refresh</span>
+                      <img src="https://cdn-icons-png.flaticon.com/128/25/25465.png" alt="">
+                    </div>
+                  </div>
+                      </div>
+                      <div class="TRAIN-EXP-button" style="margin: 20px 10px;">
+                        <button class="book" id="Book">Book Now</button>
+                        <button id="other" style="padding: 10px; cursor: pointer;">OTHER DATES</button>
+                      </div>
+                   </div> 
+            <img src="https://tpc.googlesyndication.com/simgad/6105486569216367294" alt="">       
+    </div>
+    <script>
+let sentes = document.querySelectorAll(".btn-f")
+sentes[0].style.background = "#213D77"
+sentes[0].style.color = "white"
+
+setInterval(()=>{
+    let date = new Date();
+let options = {
+    weekday: "long", month: "short",
+    day: "numeric"
+
+};
+ 
+let full = date.toDateString("en-us", options);
+fulldate.innerHTML = full
+let dat = date.toLocaleString("en-us", options);
+date1.innerHTML = dat
+date2.innerHTML = dat
+date3.innerHTML = dat
+date4.innerHTML = dat
+date5.innerHTML = dat
+date6.innerHTML = dat
+date7.innerHTML = dat
+date8.innerHTML = dat
+date9.innerHTML = dat
+date10.innerHTML = dat
+date11.innerHTML = dat
+date12.innerHTML = dat
+date13.innerHTML = dat
+date14.innerHTML = dat
+})
+ 
+</script>
+  </body>
+</html>
